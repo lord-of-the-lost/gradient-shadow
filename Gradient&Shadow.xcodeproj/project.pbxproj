@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		603643D92A51A43E007E3B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603643D82A51A43E007E3B24 /* AppDelegate.swift */; };
-		603643DB2A51A43E007E3B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603643DA2A51A43E007E3B24 /* SceneDelegate.swift */; };
 		603643DD2A51A43E007E3B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603643DC2A51A43E007E3B24 /* ViewController.swift */; };
-		603643E02A51A43E007E3B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603643DE2A51A43E007E3B24 /* Main.storyboard */; };
 		603643E22A51A446007E3B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603643E12A51A446007E3B24 /* Assets.xcassets */; };
 		603643E52A51A446007E3B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603643E32A51A446007E3B24 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		603643D52A51A43E007E3B24 /* Gradient&Shadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gradient&Shadow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		603643D82A51A43E007E3B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		603643DA2A51A43E007E3B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		603643DC2A51A43E007E3B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		603643DF2A51A43E007E3B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		603643E12A51A446007E3B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		603643E42A51A446007E3B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		603643E62A51A446007E3B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				603643D82A51A43E007E3B24 /* AppDelegate.swift */,
-				603643DA2A51A43E007E3B24 /* SceneDelegate.swift */,
 				603643DC2A51A43E007E3B24 /* ViewController.swift */,
-				603643DE2A51A43E007E3B24 /* Main.storyboard */,
 				603643E12A51A446007E3B24 /* Assets.xcassets */,
 				603643E32A51A446007E3B24 /* LaunchScreen.storyboard */,
 				603643E62A51A446007E3B24 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				603643E52A51A446007E3B24 /* LaunchScreen.storyboard in Resources */,
 				603643E22A51A446007E3B24 /* Assets.xcassets in Resources */,
-				603643E02A51A43E007E3B24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +133,12 @@
 			files = (
 				603643DD2A51A43E007E3B24 /* ViewController.swift in Sources */,
 				603643D92A51A43E007E3B24 /* AppDelegate.swift in Sources */,
-				603643DB2A51A43E007E3B24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		603643DE2A51A43E007E3B24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				603643DF2A51A43E007E3B24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		603643E32A51A446007E3B24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +276,7 @@
 				INFOPLIST_FILE = "Gradient&Shadow/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +286,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikolayignatov.Gradient-Shadow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +307,7 @@
 				INFOPLIST_FILE = "Gradient&Shadow/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,6 +317,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikolayignatov.Gradient-Shadow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
